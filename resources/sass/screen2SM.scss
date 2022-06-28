@@ -1,0 +1,26 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        //background-color: blue;
+    }
+
+    .navbar {
+        min-height: auto;
+    }
+
+    .home-title {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 60px; /* or 126% */
+        text-align: center;
+    }
+
+    .text-p1 {
+        font-family: "Sofia Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+    }
+}

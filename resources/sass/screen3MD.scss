@@ -1,0 +1,67 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+   // @media only screen and (min-width: 1200px){
+    body {
+        //background-color: green;
+    }
+
+    .navbar {
+        min-height: auto;
+    }
+    .navbar .nav-link {
+        font-family: "Sofia Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+
+    .home-title {
+        font-weight: 700; /* calc(4rem + 0.39vw);*/
+        font-size: 96px;
+        line-height: 74px;
+        text-align: left;
+    }
+    
+    .home-contact {
+        font-size: 27px;
+        line-height: 26px;
+    }
+
+    .img-map{
+        width: 100%;
+        height: 75vh;
+    }
+
+    .text-p1 {
+        font-size: 24px;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    .img-section{
+        max-width: 100%;
+        height: auto;
+    }
+    .img-section1{
+        width: 300px;
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

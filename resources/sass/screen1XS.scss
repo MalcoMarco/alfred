@@ -1,0 +1,100 @@
+/* Extra small devices (phones, 600px and down) */
+body {
+   // background-color: red;
+}
+
+.navbar {
+    min-height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+.navbar .nav-link {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.form .label{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.home-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 51px;
+    text-align: center;
+    color: #000000;
+}
+
+.home-contact {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 3rem;
+    display: block;
+}
+
+.text-p1 {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    text-align: center;
+}
+
+.img-map{
+    width: 100%;
+    height: 75vh;
+}
+
+.partners-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+.partners-logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.partners-logo {
+    margin: .5rem .5rem 1rem .5rem;
+
+    width: 100px;
+    height: auto;
+}
+
+.img-section{
+    width: 150px;
+    height: auto;
+}
+.img-section1{
+    width: 160px;
+    height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
