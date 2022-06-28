@@ -44,12 +44,12 @@
       <div class="d-flex">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <x-nav-link class="nav-link" href="#download">
+            <x-nav-link class="nav-link" href="{{ route('login') }}" :active="request()->routeIs('login')">
               {{ __('Login') }}
             </x-nav-link>
           </li>
           <li class="nav-item">
-            <x-nav-link class="nav-link" href="#download">
+            <x-nav-link class="nav-link" href="{{ route('register') }}" :active="request()->routeIs('register')">
               {{ __('Register') }}
             </x-nav-link>
           </li>
