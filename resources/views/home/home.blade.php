@@ -10,7 +10,5 @@
         </div>
         <a href="#contact" class="home-contact">{{__('Contact developer support')}} ></a>
     </div>
-    <div class="col-lg-6 d-flex justify-content-center">
-        <img src="images/Map-flags.png" alt="" class="img-map">
-    </div>
+    <x-maps-send></x-maps-send>
 </div>

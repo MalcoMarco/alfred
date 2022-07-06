@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div class="container-fluid w-90">
-    <a class="navbar-brand" href="#home">
+    <a class="navbar-brand" href="/#home">
       <x-application-logo style="width: 136px;height: 24px;" />
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -43,6 +43,7 @@
       </ul>
       <div class="d-flex">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          @guest
           <li class="nav-item">
             <x-nav-link class="nav-link" href="{{ route('login') }}" :active="request()->routeIs('login')">
               {{ __('Login') }}
@@ -53,6 +54,28 @@
               {{ __('Register') }}
             </x-nav-link>
           </li>
+          @else
+          <li class="nav-item dropdown d-flex align-items-center">
+            <a class="nav-link dropdown-toggle py-0" data-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <div class="avatar avatar-md"> 
+                  {{Auth::user()->email}}
+                    <img class="nav-flag"
+                        src="https://upload.wikimedia.org/wikipedia/commons/f/f4/User_Avatar_2.png" alt="." />
+                </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end pt-0">                
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button class="dropdown-item mt-1">
+                        <i class="fas fa-sign-out-alt icon me-2"></i>
+                        {{ __('Log Out') }}
+                    </button>
+                </form>
+            </div>
+        </li>
+
+          @endguest
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownlang" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">

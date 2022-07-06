@@ -46,23 +46,49 @@
         </div>
         <div class="mb-3">
             <label for="delivery" class="form-label">{{__("Delivery Options")}} </label>
-            <div class="form-shadow">
-                <select id="delivery" class="form-select">
-                    <option selected>{{__("Bank account")}} </option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <div></div>
+                <div class="input-group form-shadow">
+                    <label class="input-group-text w-auto"><img src="images/icons/Icon_bank.png" class="me-2"></label>
+                    <select id="delivery" class="form-select">
+                        <option selected>{{__("Bank account")}} </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                    </select>
+                </div>
         </div>
 
-        <div class="mb-4">
-            <div class="form-shadow"><input class="form-control" type="text" placeholder="{{__('Amount to send')}}" ></div>
+        <label class="form-label">{{__('Amount to send')}}</label>
+        <div class="mb-4 position-relative">
+            <div class="input-group form-shadow">
+                <label class="input-group-text w-auto"><img src="images/icons/$.png" class="me-2"></label>
+                <input class="form-control" type="text" placeholder="{{__('Amount to send')}}" >
+            </div>
+            <div class="fee">
+                <div class="fee-container">
+                    <div class="fee-amount"><span>$ 0.00</span></div>
+                    <div class="fee-text">Fee</div>
+                </div>
+            </div>
+        </div>
+        <label class="form-label">{{__('The recipient receives')}}</label>
+        <div class="mb-4 position-relative">
+            <div class="input-group form-shadow">
+                <label class="input-group-text w-auto">USD</label>
+                <input class="form-control" type="text" placeholder="{{__('The recipient receives')}}" >
+            </div>
+            <div class="fee">
+                <div class="fee-container bg-dark">
+                    <div class="fee-amount text-white"><span>$ 0.00</span></div>
+                    <div class="fee-text">Rate</div>
+                </div>
+            </div>
         </div>
 
         <div class="mb-3 text-center">
             <button class="btn btn-primary">{{__("Calculate")}} </button>
         </div>        
+        <div class="mb-3 text-center">
+            <button class="btn btn-light">{{__("GET STARTED")}} </button>
+        </div>        
     </form>
+
 </x-page-with-map>

@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+//@import url("../fonts/SofiaProRegular.ttf");
+
+@font-face {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    src: url("../fonts/SofiaProRegular.ttf") format("truetype"),
+        url("../fonts/sofiapro-light.otf") format("TrueType");
+}
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+.h-100vh{
+    min-height: 100vh;
+}

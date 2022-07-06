@@ -12,13 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::middleware('redirect_by_role')->group(function () {
 
-Route::get('/', function () {    return view('index');})->name('home');
-Route::get('/send', function () {    return view('send.send');})->name('send');
+    Route::get('/', function () {    return view('index');})->name('home');
+    Route::get('/send', function () {    return view('send.send');})->name('send');
 
-Route::get('/dashboard', function () {return view('dashboard');})->middleware(['auth'])->name('dashboard');
+});
+//Route::get('/dashboard', function () {return view('dashboard');})->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+require __DIR__.'/admin.php';
 
 //Auth::routes();
 

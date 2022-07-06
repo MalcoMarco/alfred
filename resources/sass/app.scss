@@ -183,15 +183,15 @@
     flex-basis: 50%;
     max-height: 100vh;
     overflow-y: auto;
-    // scroll-snap-type: y mandatory;
-    // &.proximity {
-    //     scroll-snap-type: y proximity;
-    // }
+    scroll-snap-type: y mandatory;
+    &.proximity {
+        scroll-snap-type: y proximity;
+    }
 }
 
 .section {
     min-height: 90vh;
-    // scroll-snap-align: start;
+    scroll-snap-align: start;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -249,4 +249,45 @@ footer p {
     font-size: 15px;
     line-height: 15px;
     color: #9d9d9d;
+}
+
+
+
+// SEND PAGE
+.fee{
+    z-index: 99;
+    display: flex;
+    justify-content: end;
+    margin: .5rem 0 2rem;
+}
+.fee-container{
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    border-radius: 16px;
+    width: 130px;
+    height: 38px;
+    position: relative;
+}
+.fee-amount{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.fee-text{
+    background: #C4C4C4;
+    border-radius: 6px;
+    width: 51px;
+    height: 19px;
+    display: inline-table;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: -16px;
 }
